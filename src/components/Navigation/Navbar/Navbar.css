@@ -1,0 +1,66 @@
+.nav-list {
+  list-style: none;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s cubic-bezier(1,0,0,1);
+  background-color: #0b1011;
+  position: fixed;
+  z-index: 99;
+}
+
+.nav-item {
+  margin: 1rem;
+}
+
+.nav-item-show {
+  animation: moveInTop .5s .5s;
+  animation-fill-mode: backwards;
+}
+
+.nav-link {
+  cursor: pointer;
+  padding: 1rem 3.7rem;
+  text-decoration: none;
+  color: white;
+  font-size: 2.5rem;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+  transition: all .5s;
+  background-size: 228%;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  background-position: 100%;
+  color: rgba(33,33,33,.8);
+  transform: translateX(1rem);
+}
+
+.nav-show {
+  animation: clipPath1 .5s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.nav-hide {
+  animation: clipPath2 .5s ease-out;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes moveInTop {
+  0% { transform: translateY(35px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes clipPath1 {
+  0% { clip-path: polygon(0 0, 100% 0, 100% 0vh, 0 100%); }
+  100% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh); }
+}
+
+@keyframes clipPath2 {
+  0% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh); }
+  100% { clip-path: polygon(0 0, 0 0, 0 0, 0 100%); }
+}

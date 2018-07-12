@@ -1,0 +1,68 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: radial-gradient(#eeeeee, #616161);
+  color: #66615b;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+  line-height: 1.5;
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1 {
+  font-size: 43.2px;
+  /* margin: 30px 0 0; */
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 33.6px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 21.9px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 19.2px;
+  line-height: 14.4px;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 16.2px;
+  line-height: 16.8px;
+}
+
+h6 {
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5em;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.5em;
+  margin-bottom: 5px;
+}
