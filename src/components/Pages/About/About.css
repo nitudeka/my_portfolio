@@ -4,7 +4,9 @@
 
 .about-bg {
   height: 40vh;
-  background-image: url(../../../assets/img/about-bg.jpg);
+  background-image: linear-gradient(
+    to right rgba(0,0,0,.7), rgb(0,0,0,.7)), 
+    url(../../../assets/img/about-bg.jpg);
   background-size: cover;
   background-position: center;
   animation: hue-rotate 10s infinite linear;
@@ -14,7 +16,7 @@
   height: 60vh;
   position: absolute;
   z-index: 1;
-  background-color: rgba(255,255,255,.9);
+  background-color: #212121;
   display: flex;
   flex-flow: column;
   position: relative;
@@ -29,7 +31,6 @@
 }
 
 .avatar-img {
-  background-color: #FFFFFF;
   margin-bottom: 10px;
   padding: 0px;
   border-radius: 50% !important;
@@ -51,21 +52,19 @@
 .about-heading-primary {
   font-size: 19px;
   margin-top: 10px;
-  margin-bottom: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
   min-height: 32px;
-  color: #333333;
   letter-spacing: .4rem;
-}
-
-.about-heading-secondary {
-  font-size: 12px;
-  color: #9A9A9A;
-  text-transform: uppercase;
-  margin-bottom: 9px;
 }
 
 .about-paragraph {
   max-width: 450px;
+}
+
+.bold {
+  font-weight: 700;
+  color: #e0e0e0;
 }
 
 @keyframes hue-rotate {

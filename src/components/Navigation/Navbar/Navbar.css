@@ -6,30 +6,31 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  transition: all .3s cubic-bezier(1,0,0,1);
+  transition: all .3s cubic-bezier(1, 0, 0, 1);
   background-color: #0b1011;
   position: fixed;
   z-index: 99;
 }
 
-.nav-item {
-  margin: 1rem;
+.nav-show {
+  transform: translateY(0);
 }
 
-.nav-item-show {
-  animation: moveInTop .5s .5s;
+.nav-hide {
+  transform: translateY(-100vh);
+}
+
+.nav-show .nav-item {
+  animation: moveInTop .8s .4s ease-out;
   animation-fill-mode: backwards;
 }
 
-.nav-link {
+.nav-item {
   cursor: pointer;
-  padding: 1rem 3.7rem;
-  text-decoration: none;
-  color: white;
-  font-size: 2.5rem;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
-  transition: all .5s;
-  background-size: 228%;
+  border: 1.6px solid transparent;
+  margin: 1rem;
+  padding: 1px;
+  transition: all 1.5s;
 }
 
 .nav-item:hover {
@@ -45,6 +46,7 @@
 .nav-link {
   border: 1.5px solid transparent;
   margin-bottom: 0;
+  color: #66615b;
   margin: 5px;
   margin-top: -8px;
   margin-right: -8px;
@@ -54,3 +56,7 @@
   transition: all 1s ease-out;
 }
 
+@keyframes moveInTop {
+  0% { opacity: 0; transform: translateY(1.5rem); }
+  100% { opacity: 1; transform: translateY(0); }
+}

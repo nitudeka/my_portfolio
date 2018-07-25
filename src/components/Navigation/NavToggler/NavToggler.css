@@ -18,13 +18,29 @@
   position: relative;
 }
 
+.nav-toggler:hover .nav-toggler-icon::after {
+  top: 1rem;
+}
+
+.nav-toggler:hover .nav-toggler-icon::before {
+  top: -1rem;
+}
+
+.nav-toggler-icon-active:hover .nav-toggler-icon::after {
+  top: 0;
+}
+
+.nav-toggler-icon-active:hover .nav-toggler-icon::before {
+  top: 0;
+}
+
 .nav-toggler-icon,
 .nav-toggler-icon::before,
 .nav-toggler-icon::after {
   display: inline-block;
   width: 3rem;
   height: 2px;
-  background-color: rgba(33,33,33,.7)
+  background-color: rgba(33,33,33,.7);
 }
 
 .nav-toggler-icon::before,

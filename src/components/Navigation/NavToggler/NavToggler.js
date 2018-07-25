@@ -3,7 +3,9 @@ import './NavToggler.css';
 import classnames from 'classnames';
 
 const NavToggler = (props) => {
-  const navTogglerIcon = classnames('nav-toggler', props.navShow ? 'nav-toggler-icon-active' : null)
+  const navTogglerIcon = classnames(
+    'nav-toggler', props.navShow ? 'nav-toggler-icon-active' : null
+  )
   
   return (
     <div onClick={props.toggleNav} className={navTogglerIcon}>

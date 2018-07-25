@@ -7,7 +7,7 @@ const MyProjects = (props) => {
       <h1 className='my-projects-heading'>My Projects</h1>
       <div className='my-project'>
         <div className='project-container'>
-          <div className='project'>nitu</div>
+          <div className='project project-1'>nitu</div>
           <div className='project-description'>onie</div>
         </div>
         <div className='project-container'>

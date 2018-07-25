@@ -13,10 +13,10 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-image: radial-gradient(#eeeeee, #616161);
-  color: #66615b;
+  background-color: #212121;
+  color: #eee;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
   line-height: 1.5;
   background-attachment: fixed;
