@@ -32,35 +32,25 @@
   background-size: 228%;
 }
 
-.nav-link:hover,
-.nav-link:active {
-  background-position: 100%;
-  color: rgba(33,33,33,.8);
-  transform: translateX(1rem);
+.nav-item:hover {
+  border: 1.6px solid rgba(255,255,255,.2);
 }
 
-.nav-show {
-  animation: clipPath1 .5s ease-out;
-  animation-fill-mode: forwards;
+.nav-item:hover .nav-link {
+  transform: translate(.5rem, -.5rem);
+  border: 1.5px solid rgba(255,255,255,.7);
+  color: rgba(255,255,255,.8);
 }
 
-.nav-hide {
-  animation: clipPath2 .5s ease-out;
-  animation-fill-mode: forwards;
+.nav-link {
+  border: 1.5px solid transparent;
+  margin-bottom: 0;
+  margin: 5px;
+  margin-top: -8px;
+  margin-right: -8px;
+  padding: 5px 20px;
+  font-size: 3rem;
+  font-weight: 500;
+  transition: all 1s ease-out;
 }
 
-
-@keyframes moveInTop {
-  0% { transform: translateY(35px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes clipPath1 {
-  0% { clip-path: polygon(0 0, 100% 0, 100% 0vh, 0 100%); }
-  100% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh); }
-}
-
-@keyframes clipPath2 {
-  0% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh); }
-  100% { clip-path: polygon(0 0, 0 0, 0 0, 0 100%); }
-}
