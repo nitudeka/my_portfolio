@@ -1,0 +1,69 @@
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1 {
+  font-size: 43.2px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 33.6px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 21.9px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 19.2px;
+  line-height: 14.4px;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 16.2px;
+  line-height: 16.8px;
+}
+
+h6 {
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5em;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.5em;
+  margin-bottom: 5px;
+}
+
+.bold {
+  font-weight: 700;
+  color: $grey-lighten-2;
+}
+
+.heading__primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-flow: column;
+  height: 100%;
+  flex-wrap: wrap;
+  color: rgba($color-white, .8);
+  text-transform: uppercase;
+
+  &--main {
+    letter-spacing: 1rem;
+  }
+
+  &--sub {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+  }
+}

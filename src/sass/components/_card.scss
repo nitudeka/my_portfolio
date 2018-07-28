@@ -1,0 +1,47 @@
+.card {
+  perspective: 150rem;
+  width: 30rem;
+  height: 47rem;
+  position: relative;
+  
+  &__side {
+    border-radius: 3px;
+    transition: all 2s ease;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    padding: 2rem 0;
+    box-sizing: border-box;
+  }
+
+  &:hover &__front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__back {
+    transform: rotateY(0);
+  }
+
+  &__front {
+    &--1 {
+      background-color: $grey-darken-2;
+    }
+
+    &--2 {
+      background-color: lightcoral;
+    }
+  }
+
+  &__back {
+    transform: rotateY(180deg);
+    
+    &--1 {
+      background-color: $grey-darken-3;
+    }
+
+    &--2 {
+      background-color: lightsalmon;
+    }
+  }
+}

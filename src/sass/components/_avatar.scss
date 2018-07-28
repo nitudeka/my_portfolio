@@ -1,0 +1,15 @@
+.avatar {
+  padding: 15px;
+  max-width: 180px;
+  margin: -85px auto 0;
+  display: inline-block;
+
+  &__img {
+    margin-bottom: 10px;
+    padding: 0px;
+    border-radius: 50% !important;
+    max-width: 100%;
+    border-style: none;
+    box-shadow: 0 4px 18px rgba($color-black, .4);
+  }
+}

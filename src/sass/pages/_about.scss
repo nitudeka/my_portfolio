@@ -1,0 +1,45 @@
+.about {
+  min-height: 100vh;
+
+  &__background {
+    height: 40vh;
+    background-image: linear-gradient( to right rgba($color-black, .7), rgba($color-black, .7)), url(./assets/img/about-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: hue-rotate 10s infinite linear;
+  }
+
+  &__container {
+    height: 60vh;
+    position: absolute;
+    z-index: 1;
+    background-color: #212121;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    align-items: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  &__heading {
+    font-size: 19px;
+    margin-top: 10px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    min-height: 32px;
+    letter-spacing: .4rem;
+  }
+
+  &__paragraph {
+    max-width: 450px;
+  }
+}

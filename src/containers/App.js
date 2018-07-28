@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
 import Navbar from '../components/Navigation/Navbar/Navbar';
-import MyProjects from '../components/Pages/MyProjects/MyProjects';
+import MyProjects from '../components/Pages/Projects/Projects';
 import About from '../components/Pages/About/About';
 import Home from '../components/Pages/Home/Home';
 
@@ -21,11 +20,11 @@ class App extends Component {
   
   render() {
     return (
-      <div className='App'>
+      <div>
         <Navbar routeChange={this.routeChangeHandler} navShow={this.state.navShow} toggleNav={this.toggleNav} />
         {
           this.state.route === 'home'
-          ? <Home />
+          ? <MyProjects />
           :
           this.state.route === 'myProjects'
           ? <MyProjects />
