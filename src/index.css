@@ -127,6 +127,10 @@ p {
   .card__back {
     transform: rotateY(180deg);
     background-color: #424242; }
+    .card__back--1 {
+      background-image: url(./assets/img/card-1-bg.png);
+      background-size: cover;
+      background-position: center; }
     .card__back--2 {
       background-image: url(./assets/img/card-2-bg.png);
       background-size: cover;

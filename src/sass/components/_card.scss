@@ -32,6 +32,12 @@
     transform: rotateY(180deg);
     background-color: $grey-darken-3;
 
+    &--1 {
+      background-image: url(./assets/img/card-1-bg.png);
+      background-size: cover;
+      background-position: center;
+    }
+
     &--2 {
       background-image: url(./assets/img/card-2-bg.png);
       background-size: cover;

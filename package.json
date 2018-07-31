@@ -10,6 +10,7 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
+    "watch:sass": "node-sass-chokidar ./src/sass/main.scss ./src/index.css -w",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
