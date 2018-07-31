@@ -9,6 +9,10 @@
     animation: hue-rotate 10s infinite linear;
   }
 
+  &__name {
+    font-size: 2rem;
+  }
+
   &__container {
     height: 60vh;
     position: absolute;

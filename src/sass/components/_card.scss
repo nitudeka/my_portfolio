@@ -1,20 +1,21 @@
 .card {
   perspective: 150rem;
   width: 30rem;
-  height: 47rem;
+  height: 40rem;
   position: relative;
   
   &__side {
     border-radius: 3px;
-    transition: all 2s ease;
+    transition: all 1s ease;
     height: 100%;
     width: 100%;
     position: absolute;
     backface-visibility: hidden;
     padding: 2rem 0;
     box-sizing: border-box;
+    text-align: center;
   }
-
+  
   &:hover &__front {
     transform: rotateY(-180deg);
   }
@@ -24,24 +25,25 @@
   }
 
   &__front {
-    &--1 {
-      background-color: $grey-darken-2;
-    }
-
-    &--2 {
-      background-color: lightcoral;
-    }
+    background-color: $grey-lighten-3;
   }
 
   &__back {
     transform: rotateY(180deg);
-    
-    &--1 {
+    background-color: $grey-darken-3;
+
+    &--2 {
+      background-image: url(./assets/img/card-2-bg.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--3 {
       background-color: $grey-darken-3;
     }
 
-    &--2 {
-      background-color: lightsalmon;
+    &--4 {
+      background-color: $grey-darken-3;
     }
   }
 }

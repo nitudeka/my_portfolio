@@ -11,15 +11,17 @@
   }
 
   &__heading {
+    display: inline-block;
     font-size: 4rem;
-    color: $grey-lighten-5;
+    color: $grey-darken-1;
+    padding: 0 5px 5px 5px;
+    border-bottom: 1.5px solid $grey-base;
   }
 
   &__description {
     font-size: 2rem;
     font-weight: 500;
-    color: $grey-lighten-1;
-    padding: 1.5rem;
-    text-align: justify;
+    color: $grey-darken-1;
+    padding: 2.2rem 1.5rem;
   }
 }

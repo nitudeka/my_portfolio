@@ -21,10 +21,13 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar routeChange={this.routeChangeHandler} navShow={this.state.navShow} toggleNav={this.toggleNav} />
+        <Navbar routeChange={this.routeChangeHandler}
+          navShow={this.state.navShow}
+          toggleNav={this.toggleNav}
+        />
         {
           this.state.route === 'home'
-          ? <MyProjects />
+          ? <Home />
           :
           this.state.route === 'myProjects'
           ? <MyProjects />

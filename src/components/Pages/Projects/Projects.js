@@ -1,10 +1,10 @@
 import React from 'react';
-import Card from '../../Card/Card';
+import CardArray from '../../Card/CardArray';
 
 const MyProjects = () => {
   return (
     <div className='project__container'>
-      <Card />
+      <CardArray />
     </div>
   )
 }

@@ -1,12 +1,20 @@
 import React from 'react';
-import { CardArray } from './CardOptions';
-import Card from '../Card/Card';
+import Card from './Card';
+import {cardOptions} from './CardOptions';
 
-const CardArray = (props) => {
-  CardArray.map((t, i) => {
-    console.log(t, i);
-    return <Card />
-  })
+const CardArray = () => {  
+  return (
+    cardOptions.map((card, i) => {
+      return (
+        <Card
+          key={i}
+          projectDescription={cardOptions[i].projectDescription}
+          cardNo={cardOptions[i].cardNo}
+          projectName={cardOptions[i].projectName}
+        />
+      )
+    })
+  )
 }
 
 export default CardArray;
