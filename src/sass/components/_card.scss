@@ -3,7 +3,13 @@
   width: 30rem;
   height: 40rem;
   position: relative;
-  
+
+  &__link, &__project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__side {
     border-radius: 3px;
     transition: all 1s ease;
@@ -14,6 +20,7 @@
     padding: 2rem 0;
     box-sizing: border-box;
     text-align: center;
+    box-shadow: 0 1.5rem 3.5rem rgba($color-black, .5);
   }
   
   &:hover &__front {
@@ -31,25 +38,48 @@
   &__back {
     transform: rotateY(180deg);
     background-color: $grey-darken-3;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    & > * {
+      height: 5rem;
+      width: 5rem;
+      border: 2px solid $grey-lighten-1;
+      border-radius: 50%;
+      margin: 1rem;
+      transition: all .5s;
+      cursor: pointer;
+    }
+    
+    & > *:hover {
+      background-color: $grey-lighten-1;
+      transform: scale(1.1);
+      box-shadow: 0 1rem 2rem rgba($color-black, .4);
+    }
+
+    & > *:active {
+      transform: scale(1);
+    }
 
     &--1 {
-      background-image: url(./assets/img/card-1-bg.png);
+      background-image:linear-gradient(to right,
+        rgba($grey-darken-4, .6), rgba($grey-darken-4, .6)),
+        url(./assets/img/card-1-bg.png);
       background-size: cover;
       background-position: center;
     }
 
     &--2 {
-      background-image: url(./assets/img/card-2-bg.png);
+      background-image:linear-gradient(to right,
+        rgba($grey-darken-4, .6), rgba($grey-darken-4, .6)),
+        url(./assets/img/card-2-bg.png);
       background-size: cover;
       background-position: center;
     }
-
-    &--3 {
-      background-color: $grey-darken-3;
-    }
-
-    &--4 {
-      background-color: $grey-darken-3;
-    }
+  }
+  .path {
+    fill: blue;
   }
 }

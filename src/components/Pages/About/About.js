@@ -12,7 +12,7 @@ const About = (props) => {
         <div className='about__content'>
           <span className='about__name'>Nitu Deka</span>
           <h2 className='about__heading'>Hi, I am Nitu</h2>
-          <p className='about__paragraph'>I am a fullstack web developer who has the passion of coding. I live in the beautiful city of India named Tezpur. I love everything about technology. I spend most of the time on a day in coding, trying to create beautiful contents</p>
+          <p className='about__paragraph'>I am a fullstack web developer who has the passion of coding. I live in the beautiful city of India named Tezpur. I love everything about technology. I spend most of the time on a day in coding, trying to create beautiful content</p>
         </div>
       </div>
     </div>

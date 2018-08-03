@@ -101,13 +101,17 @@ p {
     max-width: 100%;
     border-style: none;
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
-    border: 2px solid #fff; }
+    border: 2px solid #bdbdbd; }
 
 .card {
   perspective: 150rem;
   width: 30rem;
   height: 40rem;
   position: relative; }
+  .card__link, .card__project {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .card__side {
     border-radius: 3px;
     transition: all 1s ease;
@@ -117,7 +121,8 @@ p {
     backface-visibility: hidden;
     padding: 2rem 0;
     box-sizing: border-box;
-    text-align: center; }
+    text-align: center;
+    box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.5); }
   .card:hover .card__front {
     transform: rotateY(-180deg); }
   .card:hover .card__back {
@@ -126,19 +131,33 @@ p {
     background-color: #eeeeee; }
   .card__back {
     transform: rotateY(180deg);
-    background-color: #424242; }
+    background-color: #424242;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; }
+    .card__back > * {
+      height: 5rem;
+      width: 5rem;
+      border: 2px solid #bdbdbd;
+      border-radius: 50%;
+      margin: 1rem;
+      transition: all .5s;
+      cursor: pointer; }
+    .card__back > *:hover {
+      background-color: #bdbdbd;
+      transform: scale(1.1);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
+    .card__back > *:active {
+      transform: scale(1); }
     .card__back--1 {
-      background-image: url(./assets/img/card-1-bg.png);
+      background-image: linear-gradient(to right, rgba(33, 33, 33, 0.6), rgba(33, 33, 33, 0.6)), url(./assets/img/card-1-bg.png);
       background-size: cover;
       background-position: center; }
     .card__back--2 {
-      background-image: url(./assets/img/card-2-bg.png);
+      background-image: linear-gradient(to right, rgba(33, 33, 33, 0.6), rgba(33, 33, 33, 0.6)), url(./assets/img/card-2-bg.png);
       background-size: cover;
       background-position: center; }
-    .card__back--3 {
-      background-color: #424242; }
-    .card__back--4 {
-      background-color: #424242; }
 
 .nav__list {
   list-style: none;
@@ -194,7 +213,7 @@ p {
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  background-color: #f5f5f5;
+  border: 2px solid #f5f5f5;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 1rem;
@@ -210,7 +229,7 @@ p {
       display: inline-block;
       width: 3rem;
       height: 2px;
-      background-color: rgba(33, 33, 33, 0.7); }
+      background-color: rgba(245, 245, 245, 0.7); }
     .nav__toggler-icon::before, .nav__toggler-icon::after {
       content: "";
       position: absolute;
