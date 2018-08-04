@@ -1,8 +1,6 @@
 .about {
-  min-height: 100vh;
-
   &__background {
-    height: 40vh;
+    min-height: 40vh;
     background-image: linear-gradient( to right rgba($color-black, .7), rgba($color-black, .7)), url(./assets/img/about-bg.jpg);
     background-size: cover;
     background-position: center;
@@ -14,7 +12,7 @@
   }
 
   &__container {
-    height: 60vh;
+    min-height: 60vh;
     position: absolute;
     z-index: 1;
     background-color: #212121;
@@ -45,5 +43,19 @@
 
   &__paragraph {
     max-width: 450px;
+  }
+
+  &__accounts {
+    margin-top: 1rem;
+    display: flex;
+  }
+
+  [class^='svg__about-'] {
+    margin: 3px;
+    height: 2rem;
+  }
+
+  [class^='svg__about-']:hover {
+    transform: scale(1.3);
   }
 }

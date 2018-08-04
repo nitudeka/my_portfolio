@@ -11,6 +11,8 @@ const CardArray = () => {
           projectDescription={cardOptions[i].projectDescription}
           cardNo={cardOptions[i].cardNo}
           projectName={cardOptions[i].projectName}
+          link={cardOptions[i].link}
+          github={cardOptions[i].github}
         />
       )
     })

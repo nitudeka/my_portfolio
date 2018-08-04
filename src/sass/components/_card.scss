@@ -59,6 +59,10 @@
       box-shadow: 0 1rem 2rem rgba($color-black, .4);
     }
 
+    & > *:hover [class^="svg__"] {
+      fill: $grey-darken-4;
+    }
+
     & > *:active {
       transform: scale(1);
     }
@@ -78,8 +82,5 @@
       background-size: cover;
       background-position: center;
     }
-  }
-  .path {
-    fill: blue;
   }
 }

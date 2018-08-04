@@ -21,3 +21,8 @@ body {
   line-height: 1.5;
   background-attachment: fixed;
 }
+
+[class^="svg__"] {
+  fill: $grey-lighten-1;
+  transition: all .5s;
+}
