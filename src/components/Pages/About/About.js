@@ -16,13 +16,13 @@ const About = (props) => {
           <p className='about__paragraph'>I am a fullstack web developer who has a great ability of problem solving. I live in the beautiful city of India named Tezpur. I love everything about technology. I spend most of the time on a day in coding, trying to create beautiful content, like one you are viewing now</p>
         </div>
         <div className='about__accounts'>
-          <a href="https://www.facebook.com/profile.php?id=100008786917030&ref" target="_blank">
+          <a href="https://www.facebook.com/profile.php?id=100008786917030&ref" rel="noopener noreferrer" target="_blank">
             <Svg className='svg__about-facebook' name='facebook' />
           </a>
-          <a href="https://github.com/nitudeka" target="_blank">
+          <a href="https://github.com/nitudeka" rel="noopener noreferrer" target="_blank">
             <Svg className='svg__about-github' name='github' />
           </a>
-          <a href="https://www.linkedin.com/in/nitu-deka-12bb42160/" target="_blank">
+          <a href="https://www.linkedin.com/in/nitu-deka-12bb42160/" rel="noopener noreferrer" target="_blank">
             <Svg className='svg__about-linkedin' name='linkedin' />
           </a>
         </div>
