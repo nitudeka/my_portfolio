@@ -53,10 +53,16 @@
     margin: 5px;
     margin-top: -8px;
     margin-right: -8px;
-    padding: 5px 20px;
+    padding: 0;
     font-size: 3rem;
     font-weight: 500;
     transition: all 1s ease-out;
+  }
+  
+  &__Link {
+    display: block;
+    height: 100%;
+    padding: 5px 20px;
   }
 
   &__toggler {

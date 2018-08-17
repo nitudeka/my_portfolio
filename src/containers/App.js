@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 import Navbar from '../components/Navigation/Navbar/Navbar';
 import MyProjects from '../components/Pages/Projects/Projects';
 import About from '../components/Pages/About/About';
@@ -7,15 +8,10 @@ import Home from '../components/Pages/Home/Home';
 class App extends Component {
   state = {
     navShow: false,
-    route: 'home'
   }
 
   toggleNav = () => {
     this.setState({navShow: !this.state.navShow});
-  }
-
-  routeChangeHandler = (route) => {
-    this.setState({route: route, navShow: false});
   }
   
   render() {
@@ -25,14 +21,9 @@ class App extends Component {
           navShow={this.state.navShow}
           toggleNav={this.toggleNav}
         />
-        {
-          this.state.route === 'home'
-          ? <Home />
-          :
-          this.state.route === 'myProjects'
-          ? <MyProjects />
-          : <About />
-        }
+        <Route exact path='/' render={() => <Home />} />
+        <Route path='/projects' render={() => <MyProjects />} />
+        <Route path='/about' render={() => <About />} />
       </div>
     );
   }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import classnames from 'classnames';
 import NavToggler from '../NavToggler/NavToggler';
 
@@ -11,14 +12,14 @@ const Navbar = (props) => {
     <div>
       <NavToggler navShow={props.navShow} toggleNav={props.toggleNav} />
       <ul className={navList}>
-        <li onClick={() => props.routeChange('home')} className='nav__item'>
-          <p className='nav__link'>Home</p>
+        <li className='nav__item'>
+          <p className='nav__link'><Link onClick={props.toggleNav} className='nav__Link' to='/'>Home</Link></p>
         </li>
-        <li onClick={() => props.routeChange('myProjects')} className='nav__item'>
-          <p className='nav__link'>Projects</p>
+        <li className='nav__item'>
+          <p className='nav__link'><Link onClick={props.toggleNav} className='nav__Link' to='/projects'>Projects</Link></p>
         </li>
-        <li onClick={() => props.routeChange('about')} className='nav__item'>
-          <p className='nav__link'>About Me!</p>
+        <li className='nav__item'>
+          <p className='nav__link'><Link onClick={props.toggleNav} className='nav__Link' to='/about'>About Me!</Link></p>
         </li>
       </ul>
     </div>
