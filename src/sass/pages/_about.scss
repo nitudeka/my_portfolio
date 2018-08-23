@@ -1,7 +1,7 @@
 .about {
   &__background {
     min-height: 40vh;
-    background-image: linear-gradient( to right rgba($color-black, .7), rgba($color-black, .7)), url(./assets/img/about-bg.jpg);
+    background-image: linear-gradient( to right rgba($grey-lighten-3, .7), rgba($grey-lighten-3, .7)), url(./assets/img/about-bg.jpg);
     background-size: cover;
     background-position: center;
     animation: hue-rotate 10s infinite linear;
@@ -15,7 +15,7 @@
     min-height: 60vh;
     position: absolute;
     z-index: 1;
-    background-color: #212121;
+    background-color: $grey-lighten-2;
     display: flex;
     flex-flow: column;
     position: relative;

@@ -25,8 +25,12 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #212121;
-  color: #eeeeee;
+  background-color: #e0e0e0;
+  background-image: url(./assets/img/header-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: #424242;
   font-size: 14px;
   font-weight: 400;
   font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
@@ -38,7 +42,7 @@ a {
   text-decoration: none; }
 
 [class^="svg__"] {
-  fill: #bdbdbd;
+  fill: #424242;
   transition: all .5s; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -89,7 +93,6 @@ p {
   flex-flow: column;
   height: 100%;
   flex-wrap: wrap;
-  color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase; }
   .heading__primary--main {
     letter-spacing: 1rem; }
@@ -108,8 +111,7 @@ p {
     border-radius: 50% !important;
     max-width: 100%;
     border-style: none;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
-    border: 2px solid #bdbdbd; }
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4); }
 
 .card {
   perspective: 150rem;
@@ -136,7 +138,7 @@ p {
   .card:hover .card__back {
     transform: rotateY(0); }
   .card__front {
-    background-color: #eeeeee; }
+    background-color: #424242; }
   .card__back {
     transform: rotateY(180deg);
     background-color: #424242;
@@ -147,13 +149,12 @@ p {
     .card__back > * {
       height: 5rem;
       width: 5rem;
-      border: 2px solid #bdbdbd;
+      border: 2px solid #424242;
       border-radius: 50%;
       margin: 1rem;
       transition: all .5s;
       cursor: pointer; }
     .card__back > *:hover {
-      background-color: #bdbdbd;
       transform: scale(1.1);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
     .card__back > *:hover [class^="svg__"] {
@@ -161,11 +162,11 @@ p {
     .card__back > *:active {
       transform: scale(1); }
     .card__back--1 {
-      background-image: linear-gradient(to right, rgba(33, 33, 33, 0.6), rgba(33, 33, 33, 0.6)), url(./assets/img/card-1-bg.png);
+      background-image: linear-gradient(to right, rgba(189, 189, 189, 0.6), rgba(189, 189, 189, 0.6)), url(./assets/img/card-1-bg.png);
       background-size: cover;
       background-position: center; }
     .card__back--2 {
-      background-image: linear-gradient(to right, rgba(33, 33, 33, 0.6), rgba(33, 33, 33, 0.6)), url(./assets/img/card-2-bg.png);
+      background-image: linear-gradient(to right, rgba(189, 189, 189, 0.6), rgba(189, 189, 189, 0.6)), url(./assets/img/card-2-bg.png);
       background-size: cover;
       background-position: center; }
 
@@ -178,7 +179,7 @@ p {
   justify-content: center;
   align-items: center;
   transition: all 0.3s cubic-bezier(1, 0, 0, 1);
-  background-color: #212121;
+  background-color: #e0e0e0;
   position: fixed;
   z-index: 99; }
 
@@ -199,13 +200,12 @@ p {
   padding: 1px;
   transition: all 1.5s; }
   .nav__item:hover {
-    border: 1.6px solid rgba(255, 255, 255, 0.2); }
+    border: 1.6px solid rgba(66, 66, 66, 0.2); }
 
 .nav__item:hover .nav__link {
   transform: translate(0.5rem, -0.5rem);
-  border: 1.5px solid rgba(255, 255, 255, 0.7);
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.8); }
+  border: 1.5px solid rgba(66, 66, 66, 0.7);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2); }
 
 .nav__link {
   border: 1.5px solid transparent;
@@ -228,8 +228,7 @@ p {
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  border: 2px solid #bdbdbd;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid #424242;
   position: fixed;
   top: 1rem;
   right: 1rem;
@@ -244,7 +243,7 @@ p {
       display: inline-block;
       width: 3rem;
       height: 2px;
-      background-color: rgba(245, 245, 245, 0.7); }
+      background-color: rgba(66, 66, 66, 0.7); }
     .nav__toggler-icon::before, .nav__toggler-icon::after {
       content: "";
       position: absolute;
@@ -273,15 +272,13 @@ p {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/img/header-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
-  animation: hue-rotate 10s infinite linear; }
+  background-position: center; }
 
 .about__background {
   min-height: 40vh;
-  background-image: linear-gradient(to right rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/img/about-bg.jpg);
+  background-image: linear-gradient(to right rgba(238, 238, 238, 0.7), rgba(238, 238, 238, 0.7)), url(./assets/img/about-bg.jpg);
   background-size: cover;
   background-position: center;
   animation: hue-rotate 10s infinite linear; }
@@ -293,7 +290,7 @@ p {
   min-height: 60vh;
   position: absolute;
   z-index: 1;
-  background-color: #212121;
+  background-color: #e0e0e0;
   display: flex;
   flex-flow: column;
   position: relative;
@@ -343,12 +340,12 @@ p {
 .project__heading {
   display: inline-block;
   font-size: 4rem;
-  color: #757575;
+  color: #bdbdbd;
   padding: 0 5px 5px 5px;
   border-bottom: 1.5px solid #9e9e9e; }
 
 .project__description {
   font-size: 2rem;
   font-weight: 500;
-  color: #757575;
+  color: #bdbdbd;
   padding: 2.2rem 1.5rem; }

@@ -13,8 +13,12 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: $grey-darken-4;
-  color: $grey-lighten-3;
+  background-color: $grey-lighten-2;
+  background-image: url(./assets/img/header-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: $grey-darken-3;
   font-size: 14px;
   font-weight: 400;
   font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
@@ -28,6 +32,6 @@ a {
 }
 
 [class^="svg__"] {
-  fill: $grey-lighten-1;
+  fill: $grey-darken-3;
   transition: all .5s;
 }
