@@ -28,21 +28,21 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
 
   &__heading {
-    font-size: 19px;
-    margin-top: 10px;
+    font-size: 1.9rem;
+    margin-top: 1rem;
     font-weight: 500;
-    margin-bottom: 10px;
-    min-height: 32px;
+    margin-bottom: 1rem;
+    min-height: 3.2rem;
     letter-spacing: .4rem;
   }
 
   &__paragraph {
-    max-width: 450px;
+    max-width: 45rem;
   }
 
   &__accounts {

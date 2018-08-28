@@ -4,30 +4,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 43.2px;
+  font-size: 4.32rem;
   font-weight: 300;
 }
 
 h2 {
-  font-size: 33.6px;
+  font-size: 3.36rem;
   font-weight: 300;
 }
 
 h3 {
-  font-size: 21.9px;
+  font-size: 2.19rem;
   line-height: 1.4;
   font-weight: 300;
 }
 
 h4 {
-  font-size: 19.2px;
-  line-height: 14.4px;
+  font-size: 1.92rem;
+  line-height: 1.44rem;
   font-weight: 300;
 }
 
 h5 {
-  font-size: 16.2px;
-  line-height: 16.8px;
+  font-size: 1.62rem;
+  line-height: 1.68rem;
 }
 
 h6 {
@@ -37,7 +37,7 @@ h6 {
 }
 
 p {
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 1.5em;
   margin-bottom: 5px;
 }
@@ -56,13 +56,28 @@ p {
   height: 100%;
   flex-wrap: wrap;
   text-transform: uppercase;
-
+  
   &--main {
     letter-spacing: 1rem;
+    width: 75%;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid grey;
+
+    @media (max-width: 600px) {
+      font-size: 2rem;
+      font-weight: 400;
+    }
   }
 
   &--sub {
     font-size: 2rem;
     letter-spacing: 1rem;
+
+    @media (max-width: 600px) {
+      font-size: 1.5rem;
+      letter-spacing: 5px;
+      font-weight: 700;
+    }
   }
 }
