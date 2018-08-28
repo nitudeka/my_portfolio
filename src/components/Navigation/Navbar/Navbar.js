@@ -12,13 +12,13 @@ const Navbar = (props) => {
     <div>
       <NavToggler navShow={props.navShow} toggleNav={props.toggleNav} />
       <ul className={navList}>
-        <li className='nav__item'>
+        <li className='nav__item nav__item--1'>
           <p className='nav__link'><Link onClick={props.toggleNav} className='nav__Link' to='/'>Home</Link></p>
         </li>
-        <li className='nav__item'>
+        <li className='nav__item nav__item--2'>
           <p className='nav__link'><Link onClick={props.toggleNav} className='nav__Link' to='/projects'>Projects</Link></p>
         </li>
-        <li className='nav__item'>
+        <li className='nav__item nav__item--3'>
           <p className='nav__link'><Link onClick={props.toggleNav} className='nav__Link' to='/about'>About Me!</Link></p>
         </li>
       </ul>
