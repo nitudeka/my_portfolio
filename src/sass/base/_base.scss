@@ -35,7 +35,19 @@ a {
   text-decoration: none;
 }
 
+.bold-font {
+  font-weight: 600;
+}
+
+.accounts-link {
+  height: 2rem;
+}
+
 [class^="svg__"] {
   fill: $grey-darken-3;
   transition: all .5s;
+}
+
+.accounts-link:hover {
+  transform: scale(1.1);
 }
