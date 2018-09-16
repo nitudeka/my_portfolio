@@ -75,7 +75,7 @@
     &--1 {
       background-image:linear-gradient(to right,
         rgba($grey-lighten-1, .6), rgba($grey-lighten-1, .6)),
-        url(./assets/img/card-1-bg.png);
+        url(/static/img/card-1-bg.png);
       background-size: cover;
       background-position: center;
     }
@@ -83,7 +83,7 @@
     &--2 {
       background-image:linear-gradient(to right,
         rgba($grey-lighten-1, .6), rgba($grey-lighten-1, .6)),
-        url(./assets/img/card-2-bg.png);
+        url(/static/img/card-2-bg.png);
       background-size: cover;
       background-position: center;
     }

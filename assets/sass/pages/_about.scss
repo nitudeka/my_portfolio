@@ -13,7 +13,7 @@
     z-index: -1;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(to right, rgba($grey-lighten-2, .7), rgba($grey-lighten-2, .7)), url(./assets/img/about-bg.jpg);
+    background-image: linear-gradient(to right, rgba($grey-lighten-2, .7), rgba($grey-lighten-2, .7)), url(/static/img/about-bg.jpg);
     animation: hue-rotate 10s infinite linear;
   }
 

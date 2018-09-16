@@ -29,7 +29,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #e0e0e0;
-  background-image: url(./assets/img/header-bg.jpg);
+  background-image: url(/static/img/header-bg.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -190,11 +190,11 @@ p {
     .card__back > *:active {
       transform: scale(1); }
     .card__back--1 {
-      background-image: linear-gradient(to right, rgba(189, 189, 189, 0.6), rgba(189, 189, 189, 0.6)), url(./assets/img/card-1-bg.png);
+      background-image: linear-gradient(to right, rgba(189, 189, 189, 0.6), rgba(189, 189, 189, 0.6)), url(/static/img/card-1-bg.png);
       background-size: cover;
       background-position: center; }
     .card__back--2 {
-      background-image: linear-gradient(to right, rgba(189, 189, 189, 0.6), rgba(189, 189, 189, 0.6)), url(./assets/img/card-2-bg.png);
+      background-image: linear-gradient(to right, rgba(189, 189, 189, 0.6), rgba(189, 189, 189, 0.6)), url(/static/img/card-2-bg.png);
       background-size: cover;
       background-position: center; }
 
@@ -248,7 +248,7 @@ p {
   margin: 5px;
   margin-top: -8px;
   margin-right: -8px;
-  padding: 0;
+  padding: 1rem 3rem;
   font-size: 3rem;
   font-weight: 500;
   transition: all 1s ease-out; }
@@ -324,7 +324,7 @@ p {
     z-index: -1;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(to right, rgba(224, 224, 224, 0.7), rgba(224, 224, 224, 0.7)), url(./assets/img/about-bg.jpg);
+    background-image: linear-gradient(to right, rgba(224, 224, 224, 0.7), rgba(224, 224, 224, 0.7)), url(/static/img/about-bg.jpg);
     animation: hue-rotate 10s infinite linear; }
   .about__heading {
     font-size: 3.5rem; }

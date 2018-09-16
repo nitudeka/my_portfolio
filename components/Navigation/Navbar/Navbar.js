@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import classnames from 'classnames';
 import NavToggler from '../NavToggler/NavToggler';
 
@@ -13,13 +13,13 @@ const Navbar = (props) => {
       <NavToggler navShow={props.navShow} toggleNav={props.toggleNav} />
       <ul className={navList}>
         <li className='nav__item nav__item--1'>
-          <p className='nav__link'><Link onClick={props.toggleNav} className='nav__Link' to='/'>Home</Link></p>
+          <Link href='/'><p className='nav__link'>Home</p></Link>
         </li>
         <li className='nav__item nav__item--2'>
-          <p className='nav__link'><Link onClick={props.toggleNav} className='nav__Link' to='/projects'>Projects</Link></p>
+          <Link href='/projects'><p className='nav__link'>Projects</p></Link>
         </li>
         <li className='nav__item nav__item--3'>
-          <p className='nav__link'><Link onClick={props.toggleNav} className='nav__Link' to='/about'>About Me!</Link></p>
+          <Link href='/about'><p className='nav__link'>About Me</p></Link>
         </li>
       </ul>
     </div>
