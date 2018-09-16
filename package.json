@@ -7,7 +7,8 @@
     "watch:sass": "node-sass-chokidar ./assets/sass/main.scss ./static/style.css -w",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export"
   },
   "author": "Nitu Deka",
   "license": "ISC",
