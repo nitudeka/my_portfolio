@@ -16,7 +16,7 @@ const About = (props) => {
             Hey, you are here it means that you want to know about me. Let me introduce myself!
           </p>
           <p className='about__paragraph'>
-            I am from India. My complete name is <span className='bold-font'>Nitu Moni Deka</span>, a self-taught web developer with an addiction to mastering and adopting new skills. I want to work on complex tasks because I want to test and sharpen my skills.
+            I am from India. My complete name is <span className='bold-font'>Nitu Moni Deka</span>, a self-taught web developer with an addiction to mastering and adopting new skills. I’m passionate about building great products that make people’s lives easier. I want to work on complex tasks because I want to test and sharpen my skills.
           </p>
           <p className='about__paragraph'>
             I want to satisfy my clients not just by doing what they say me to do, but by adding a little bit more from me to make the project even more beautiful.
