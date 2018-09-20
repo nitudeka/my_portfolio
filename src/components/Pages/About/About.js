@@ -42,13 +42,3 @@ const About = (props) => {
 }
 
 export default About;
-
-/*
-Hey, you are here it means that you want to know about me. Let me introduce myself!
-
-I am from India and my complete name is Nitu Moni Deka, a self-taught web developer with an addiction to mastering and adopting new skills. I truly love to work on complex tasks because I want to test my skills and sharpen them.
-
-I want to satisfy my clients not just by doing what they ask me to do, but by adding a little bit more from me to make the project more beautiful.
-
-Like what you see? You can check me out on social media or can email me at nitumonideka327@gmail.com
-*/
