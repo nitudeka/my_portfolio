@@ -37,6 +37,11 @@ a {
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
+
 .bold-font {
   font-weight: 600;
 }

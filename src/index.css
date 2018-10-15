@@ -45,6 +45,9 @@ a {
   color: inherit;
   text-decoration: none; }
 
+::-webkit-scrollbar {
+  width: 0; }
+
 .bold-font {
   font-weight: 600; }
 
@@ -196,6 +199,14 @@ p {
       background-position: center; }
     .card__back--2 {
       background-image: linear-gradient(to right, rgba(189, 189, 189, 0.6), rgba(189, 189, 189, 0.6)), url(./assets/img/card-2-bg.png);
+      background-size: cover;
+      background-position: center; }
+    .card__back--3 {
+      background-image: linear-gradient(to right, rgba(189, 189, 189, 0.6), rgba(189, 189, 189, 0.6)), url(./assets/img/card-3-bg.png);
+      background-size: cover;
+      background-position: center; }
+    .card__back--4 {
+      background-image: linear-gradient(to right, rgba(189, 189, 189, 0.6), rgba(189, 189, 189, 0.6)), url(./assets/img/card-4-bg.jpg);
       background-size: cover;
       background-position: center; }
 

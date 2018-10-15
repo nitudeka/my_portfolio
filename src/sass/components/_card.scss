@@ -87,5 +87,21 @@
       background-size: cover;
       background-position: center;
     }
+
+    &--3 {
+      background-image:linear-gradient(to right,
+        rgba($grey-lighten-1, .6), rgba($grey-lighten-1, .6)),
+        url(./assets/img/card-3-bg.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--4 {
+      background-image:linear-gradient(to right,
+        rgba($grey-lighten-1, .6), rgba($grey-lighten-1, .6)),
+        url(./assets/img/card-4-bg.jpg);
+      background-size: cover;
+      background-position: center;
+    }
   }
 }
