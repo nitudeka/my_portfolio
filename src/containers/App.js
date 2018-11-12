@@ -21,9 +21,9 @@ class App extends Component {
           navShow={this.state.navShow}
           toggleNav={this.toggleNav}
         />
-        <Route exact path='/' render={() => <Home />} />
-        <Route path='/projects' render={() => <MyProjects />} />
-        <Route path='/about' render={() => <About />} />
+        <Route exact path='https://nitudeka.github.io/my_portfolio/' render={() => <Home />} />
+        <Route path='https://nitudeka.github.io/my_portfolio/projects' render={() => <MyProjects />} />
+        <Route path='https://nitudeka.github.io/my_portfolio/about' render={() => <About />} />
       </div>
     );
   }
