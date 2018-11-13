@@ -17,7 +17,7 @@ export const cardOptions = [
     cardNo: '3',
     projectDescription: 'The website you are viewing now! It is created completely from scratch by me. No external css library or framework is used to style this website. And like all of my projects, it is also created using sass',
     projectName: 'My Portfolio',
-    link: 'https://nitu.herokuapp.com/',
+    link: 'https://nitudeka.github.io/my_portfolio/',
     github: 'https://github.com/nitudeka/my_portfolio'
   },
   {
