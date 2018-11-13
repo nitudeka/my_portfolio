@@ -24,7 +24,7 @@ export const cardOptions = [
     cardNo: '4',
     projectDescription: 'It is a webapp created from scratch. It has a Node and Express backend API server and a frontend created with React and Redux. You can add your daily tasks here to make your day more effecient, give it a try',
     projectName: 'Todo',
-    link: 'https://nitu-todo.herokuapp.com/',
-    github: 'https://github.com/nitudeka/react_todo_V2'
+    link: 'https://nitudeka.github.io/react_todo/',
+    github: 'https://github.com/nitudeka/react_todo/'
   }
 ]
