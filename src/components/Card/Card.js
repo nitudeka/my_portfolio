@@ -16,12 +16,12 @@ const Card = (props) => {
       </div>
       <div className={`card__side card__back card__back--${props.cardNo}`}>
         <div className='card__link'>
-          <a href={props.link} className='card__link' target="_blank">
+          <a href={props.link} className='card__link' target={props.link}>
             <Svg className='svg__link' name='link' />
           </a>
         </div>
         <div className='card__link'>
-          <a href={props.github} className='card__link' target="_blank">
+          <a href={props.github} className='card__link' target={props.github}>
           <Svg className='svg__github' name='github' />
           </a>
         </div>
