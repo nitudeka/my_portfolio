@@ -56,10 +56,10 @@ class Canvas extends Component {
 
         if (mouse.x - this.x < 50 && mouse.x - this.x > -50 && mouse.y - this.y < 50 && mouse.y - this.y > -50) {
           if (this.radius < this.maxRadius) {
-            this.radius += 1;
+            this.radius += 2;
           };
         } else if (this.radius > this.minRadius) {
-          this.radius -= 1;
+          this.radius -= 2;
         }
         
         this.x += this.dx;
