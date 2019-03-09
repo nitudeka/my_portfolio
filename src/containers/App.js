@@ -23,9 +23,9 @@ class App extends Component {
           navShow={this.state.navShow}
           toggleNav={this.toggleNav}
         />
-        <Route exact path='/my_portfolio/' render={() => <Home />} />
-        <Route path='/my_portfolio/projects' render={() => <MyProjects />} />
-        <Route path='/my_portfolio/about' render={() => <About />} />
+        <Route exact path={`${process.env.REACT_APP_BASE_URL}`} render={() => <Home />} />
+        <Route path={`${process.env.REACT_APP_BASE_URL}projects`} render={() => <MyProjects />} />
+        <Route path={`${process.env.REACT_APP_BASE_URL}about`} render={() => <About />} />
       </div>
     );
   }
