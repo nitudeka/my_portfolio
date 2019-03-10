@@ -1,14 +1,19 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import avatar from '../../../assets/img/about-avatar.jpg';
 import Svg from '../../Svg/Svg';
 
 const About = (props) => {
   return (
     <div className='about'>
+      <Helmet>
+        <meta name="description" content="About Nitu Deka, a full-stack web developer"/>
+        <title>About | Nitu Deka</title>
+      </Helmet>
       <div className='about__background'></div>
       <div className='about__content'>
         <div className='avatar'>
-          <img src={avatar} className='avatar__img' alt='avatar' />
+          <img src={avatar} className='avatar__img' alt='Nitu Deka' />
         </div>
         <h4 className='about__heading'>Nitu Deka</h4>
         <div className='about__paragraphs'>
