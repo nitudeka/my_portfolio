@@ -7,6 +7,7 @@ class Canvas extends Component {
     // going to used to stop the animation when
     // it gets unmounted from the DOM
     this.animationId = null;
+    this.numberOfCircles = window.innerWidth * 0.8;
   };
 
   // create a ref to access the canvas
@@ -28,6 +29,7 @@ class Canvas extends Component {
     window.addEventListener('resize', () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
+      this.numberOfCircles = window.innerWidth * 0.8;
 
       init();
     });
@@ -79,7 +81,7 @@ class Canvas extends Component {
 
     const init = () => {
       circleArray = [];
-      for (let i=0; i<1000; i++) {
+      for (let i=0; i<this.numberOfCircles; i++) {
         let radius = Math.floor(Math.random() * 4);
         let color = colorArray[Math.floor(Math.random() * colorArray.length)];
         let x = Math.random() * (window.innerWidth - (radius * 2)) + radius;
