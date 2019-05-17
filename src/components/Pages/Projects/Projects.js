@@ -6,7 +6,7 @@ const MyProjects = () => {
   return (
     <div className='project__container'>
     	<Helmet>
-    		<meta name="description" content="Projects that Nitu Deka have built so far"/>
+    		<meta name="description" content="Projects that I have built so far"/>
     		<title>Projects | Nitu Deka</title>
     	</Helmet>
       <CardArray />
