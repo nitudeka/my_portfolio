@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import Canvas from '../../Canvas/';
 import Header from './Header/Header';
 
 const Home = (props) => {
@@ -9,6 +10,7 @@ const Home = (props) => {
     		<meta name="description" content="Nitu Deka, a full-stack web developer. Visit to know about him and his projects"/>
     		<title>Home | Nitu Deka</title>
     	</Helmet>
+    	<Canvas velocity={2} colors={['#B2B2B2', '#737373', '#262626', '#404040', '#0F0F0F']} />
       <Header />
     </div>
   )

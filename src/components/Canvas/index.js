@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 
 class Canvas extends Component {
+  constructor(props) {
+    super(props);
+    // the ID that is returned from requestAnimationFrame
+    // going to used to stop the animation when
+    // it gets unmounted from the DOM
+    this.animationId = null;
+  };
+
   // create a ref to access the canvas
   canvasRef = React.createRef();
   
@@ -83,18 +91,23 @@ class Canvas extends Component {
     };
 
     const animate = () => {
-      requestAnimationFrame(animate);
       c.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
       for (let i=0; i<circleArray.length; i++) {
         circleArray[i].update()
       };
+
+      this.animationId = requestAnimationFrame(animate);
     };
 
     init()
     animate();
   };
   
+  componentWillUnmount() {
+    cancelAnimationFrame(this.animationId);
+  };
+
   render() {
     return (
       <canvas style={{ position: 'fixed', zIndex: -1 }} ref={this.canvasRef}></canvas>
